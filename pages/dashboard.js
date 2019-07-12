@@ -3,7 +3,7 @@ import { Avatar, Card, Col, PageHeader, Row } from 'antd';
 /* SCSS */
 import '../static/scss/dashboard.scss'
 
-import withContext, { GlobalContext } from "../contexts/WithContext";
+import { GlobalContext } from "../contexts/WithContext";
 import PageWrapper from "../components/common/PageWrapper";
 import DefaultLayout from "../components/layout/DefaultLayout";
 
@@ -51,4 +51,4 @@ const Dashboard = () => {
 };
 
 
-export default withContext(Dashboard);
+export default Dashboard;

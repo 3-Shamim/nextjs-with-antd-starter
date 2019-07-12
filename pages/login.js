@@ -3,7 +3,7 @@ import { Button, Checkbox, Form, Icon, Input } from 'antd';
 /* SCSS */
 import '../static/scss/login.scss';
 
-import withContext, { GlobalContext } from "../contexts/WithContext";
+import { GlobalContext } from "../contexts/WithContext";
 import { redirectTo } from "../components/common/Redirect";
 
 const Login = (props) => {
@@ -78,4 +78,4 @@ const Login = (props) => {
 
 const WrappedLogin = Form.create({ name: 'login' })(Login);
 
-export default withContext(WrappedLogin);
+export default WrappedLogin;

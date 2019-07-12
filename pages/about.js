@@ -8,7 +8,6 @@ import {
     Button
 } from 'antd'
 import React from "react";
-import withContext from "../contexts/WithContext";
 
 const FormItem = Form.Item;
 const Option = Select.Option;
@@ -75,4 +74,4 @@ const About = () => (
     </div>
 );
 
-export default withContext(About)
+export default About

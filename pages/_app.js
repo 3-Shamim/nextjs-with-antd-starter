@@ -5,6 +5,7 @@ import React from 'react'
 import { mockFetch } from '../helpers/mockFetch';
 import { redirectTo } from '../components/common/Redirect'
 import cookies from 'next-cookies';
+import withContext from '../contexts/WithContext';
 
 class CMSApp extends App {
 
@@ -91,9 +92,11 @@ class CMSApp extends App {
     render() {
         const { Component, pageProps } = this.props;
 
+        const ComponentWithContext = withContext(Component);
+
         return (
             <Container>
-                <Component {...pageProps} />
+                <ComponentWithContext {...pageProps} />
             </Container>)
     }
 }
